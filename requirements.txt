@@ -1,8 +1,11 @@
-streamlit==1.42.2
-pandas==2.1.3
-numpy==1.26.2
-scikit-learn==1.5.0
-matplotlib==3.9.0
-seaborn==0.13.2
+# Streamlit Community Cloud currently defaults to Python 3.12.
+# These versions provide prebuilt Python 3.12 wheels and preserve compatibility
+# with the scikit-learn 1.5 pipelines bundled in models/.
 joblib==1.4.2
+streamlit==1.42.2
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.0
+matplotlib==3.9.2
+seaborn==0.13.2
 reportlab==4.2.5
