@@ -1,0 +1,45 @@
+{
+  "source": "UCI Machine Learning Repository - Dry Bean dataset",
+  "source_url": "https://archive.ics.uci.edu/dataset/602/dry+bean",
+  "doi": "10.24432/C50S4B",
+  "raw_audit": {
+    "rows": 13611,
+    "columns": 17,
+    "missing_values": 0,
+    "duplicate_rows": 68,
+    "class_distribution": {
+      "BARBUNYA": 1322,
+      "BOMBAY": 522,
+      "CALI": 1630,
+      "DERMASON": 3546,
+      "HOROZ": 1928,
+      "SEKER": 2027,
+      "SIRA": 2636
+    },
+    "feature_dtypes": {
+      "Area": "int64",
+      "Perimeter": "float64",
+      "MajorAxisLength": "float64",
+      "MinorAxisLength": "float64",
+      "AspectRation": "float64",
+      "Eccentricity": "float64",
+      "ConvexArea": "int64",
+      "EquivDiameter": "float64",
+      "Extent": "float64",
+      "Solidity": "float64",
+      "roundness": "float64",
+      "Compactness": "float64",
+      "ShapeFactor1": "float64",
+      "ShapeFactor2": "float64",
+      "ShapeFactor3": "float64",
+      "ShapeFactor4": "float64"
+    }
+  },
+  "clean_rows": 13543,
+  "train_rows": 10834,
+  "test_rows": 2709,
+  "feature_count": 16,
+  "random_state": 42,
+  "winner": "Support Vector Machine",
+  "winner_mean_rank": 1.1666666666666667
+}
