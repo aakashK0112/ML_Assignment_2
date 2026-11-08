@@ -177,7 +177,7 @@ On a Windows BITS Virtual Lab machine, double-click `RUN_ON_BITS_MACHINE.bat` fo
 4. Set the main file path to `app.py` and deploy.
 5. Replace the placeholders below only after URLs exist.
 
-Streamlit URL: `<ADD_YOUR_STREAMLIT_DEPLOYMENT_URL_HERE>`
+Streamlit URL: [https://mlassignment2-q636a5dubby6qwtjazq9oa.streamlit.app](https://mlassignment2-q636a5dubby6qwtjazq9oa.streamlit.app)
 
 ## 15. Project Folder Structure
 
@@ -204,7 +204,7 @@ All five models were trained and compared under identical split conditions. The 
 
 ## Academic and Reproducibility Notes
 
-- Replace student, GitHub, Streamlit, and BITS screenshot placeholders before submission.
+- Replace the student-details and BITS screenshot placeholders before submission.
 - Do not upload private credentials or the `.venv` folder to GitHub.
 - Results are reproducible from the bundled dataset with `random_state=42`.
 """
@@ -275,7 +275,7 @@ def build_pdf(comparison: pd.DataFrame, metadata: dict) -> None:
                 ["Programme", "M.Tech Artificial Intelligence and Machine Learning"],
                 ["Course", "Machine Learning"],
                 ["GitHub Repository", "https://github.com/aakashK0112/ML_Assignment_2"],
-                ["Streamlit Application", "<ADD STREAMLIT DEPLOYMENT URL>"],
+                ["Streamlit Application", "https://mlassignment2-q636a5dubby6qwtjazq9oa.streamlit.app"],
             ],
             colWidths=[48 * mm, 150 * mm],
             style=TableStyle([
@@ -345,9 +345,9 @@ def build_pdf(comparison: pd.DataFrame, metadata: dict) -> None:
         Paragraph("9. Reproducibility and Quality Controls", h1),
         Paragraph("The included scripts recreate the fixed split, train every model, save all outputs, and regenerate this report. Model files contain preprocessing and estimator objects together. Source files use project-relative paths, making the folder portable across Windows and Streamlit Community Cloud. The held-out test CSV contains all 16 input features plus Class.", body),
         Paragraph("10. GitHub README Content Summary", h1),
-        Paragraph("The repository README documents the problem, dataset and source, preprocessing, five models, metric definitions, actual comparison table, model observations, winning-model rationale, Streamlit features, installation, local execution, cloud deployment, folder structure, conclusion, and placeholders that must be replaced after deployment.", body),
+        Paragraph("The repository README documents the problem, dataset and source, preprocessing, five models, metric definitions, actual comparison table, model observations, winning-model rationale, Streamlit features, installation, local execution, cloud deployment, folder structure, and conclusion.", body),
         Paragraph("Repository: https://github.com/aakashK0112/ML_Assignment_2", body),
-        Paragraph("Deployment placeholder: &lt;ADD STREAMLIT DEPLOYMENT URL&gt;", body),
+        Paragraph("Deployment: https://mlassignment2-q636a5dubby6qwtjazq9oa.streamlit.app", body),
         PageBreak(),
         Paragraph("11. BITS Virtual Lab Execution Evidence", h1),
         Paragraph("Run RUN_ON_BITS_MACHINE.bat or follow the README commands on the BITS machine. After Streamlit opens, capture the terminal showing the local URL and the dashboard showing the selected model metrics.", body),
@@ -364,14 +364,14 @@ def build_pdf(comparison: pd.DataFrame, metadata: dict) -> None:
             ]),
         ),
         Spacer(1, 7 * mm),
-        Paragraph("Before final submission, replace all student, GitHub, Streamlit, and screenshot placeholders. No URL or execution evidence has been fabricated.", body),
+        Paragraph("Before final submission, replace the student-details and screenshot placeholders. The GitHub and Streamlit URLs above are verified; no BITS execution evidence has been fabricated.", body),
         PageBreak(),
         Paragraph("12. Conclusion", h1),
         Paragraph("The assignment delivers a reproducible multiclass classification workflow over a real UCI dataset. The RBF SVM is the strongest balanced model, with Logistic Regression a close and simpler alternative. The saved-pipeline architecture ensures that every local, uploaded, or cloud prediction receives exactly the transformations learned from training data.", body),
         Paragraph("13. Key Files", h1),
         Paragraph("app.py - Streamlit interface; train_models.py - reproducible training and evaluation; generate_report.py - README and PDF generation; dataset.csv - full UCI data; test_data.csv - held-out data; models/ - five saved pipelines; results/ - comparison, reports, audit, and confusion matrices; assets/ - performance chart.", body),
         Paragraph("14. Submission Checklist", h1),
-        Paragraph("[ ] Add student name and BITS ID.  [ ] Create GitHub repository and replace its URL.  [ ] Deploy Streamlit and replace its URL.  [ ] Run on BITS Virtual Lab and insert an authentic screenshot.  [ ] Recheck the generated PDF and repository contents before upload.", body),
+        Paragraph("[ ] Add student name and BITS ID.  [x] GitHub repository created.  [x] Streamlit application deployed.  [ ] Run on BITS Virtual Lab and insert an authentic screenshot.  [ ] Recheck the generated PDF and repository contents before upload.", body),
     ])
 
     document.build(

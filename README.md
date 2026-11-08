@@ -108,7 +108,7 @@ On a Windows BITS Virtual Lab machine, double-click `RUN_ON_BITS_MACHINE.bat` fo
 4. Set the main file path to `app.py` and deploy.
 5. Replace the placeholders below only after URLs exist.
 
-Streamlit URL: `<ADD_YOUR_STREAMLIT_DEPLOYMENT_URL_HERE>`
+Streamlit URL: [https://mlassignment2-q636a5dubby6qwtjazq9oa.streamlit.app](https://mlassignment2-q636a5dubby6qwtjazq9oa.streamlit.app)
 
 ## 15. Project Folder Structure
 
@@ -135,6 +135,6 @@ All five models were trained and compared under identical split conditions. The 
 
 ## Academic and Reproducibility Notes
 
-- Replace student, GitHub, Streamlit, and BITS screenshot placeholders before submission.
+- Replace the student-details and BITS screenshot placeholders before submission.
 - Do not upload private credentials or the `.venv` folder to GitHub.
 - Results are reproducible from the bundled dataset with `random_state=42`.
